@@ -106,13 +106,13 @@ base_nvcc_flags = [
 ]
 
 if os.name == "posix":
-	base_cflags = ["-std=c++14"]
+	base_cflags = ["-std=c++17"]
 	base_nvcc_flags += [
 		"-Xcompiler=-Wno-float-conversion",
 		"-Xcompiler=-fno-strict-aliasing",
 	]
 elif os.name == "nt":
-	base_cflags = ["/std:c++14"]
+	base_cflags = ["/std:c++17"]
 
 
 # Some containers set this to contain old architectures that won't compile. We only need the one installed in the machine.
