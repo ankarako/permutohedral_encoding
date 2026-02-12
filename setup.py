@@ -2,7 +2,7 @@ import os
 
 import re
 from setuptools import setup
-from pkg_resources import parse_version
+# from pkg_resources import parse_version
 import subprocess
 import sys
 import torch
